@@ -15,7 +15,7 @@ let toggleNav = () => {
             if (w <= 688) {
                 link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
             } else {
-                link.style.animation = `navLinkFade`;
+                link.style.animation = '';
             }
         }
     });
@@ -48,8 +48,8 @@ let navClick = () => {
 //     });
 
 let w = window.innerWidth;
-if (w <= 688) {
-    navSlide();
-    navClick();
-}
+
+navSlide();
+navClick();
+
 console.log(w);
