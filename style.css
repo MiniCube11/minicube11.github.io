@@ -52,28 +52,13 @@ h1 {
   color: var(--dark-blue);
 }
 
-.navbar, .footer {
-  margin: 0;
-}
-
 a {
   color: rgb(80, 120, 230);
 }
 
-.footer {
-  background-color: rgb(238, 238, 238);
-  padding: 10px 3px;
-  margin: 0px;
-}
-
-.footer-text {
-  margin-left: 5%;
-}
-
 .navbar {
   display: flex;
-  /* padding-left: 5%;
-  padding-right: 5%; */
+  z-index: 1000;
   background-color: #ffffff;
   position: fixed;
   top: 0;
@@ -176,9 +161,26 @@ a {
 }
 
 .project {
-  width: 27vw;
-  margin-right: 2vw;
+  width: 25vw;
+  margin-right: 4vw;
   word-wrap: break-word;
+  transition: transform 0.3s ease;
+  margin-bottom: 5vh;
+}
+
+.project:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}
+
+.project a {
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.project a:hover {
+  color: var(--light-blue);
+  transition: color 0.2s ease;
 }
 
 .project-img {
@@ -188,20 +190,16 @@ a {
 
 .project-title {
   margin-top: 5px;
-  color: var(--text-primary);
   font-size: 22px;
 }
 
 .project-tech {
   font-size: 11px;
-  color:  var(--text-primary);
 }
 
 .project-info {
   margin-top: 5px;
   font-size: 14px;
-  color: var(--text-primary);
-  margin-bottom: 5vh;
 }
 
 #about {
