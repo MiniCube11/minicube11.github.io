@@ -11,83 +11,95 @@
     <script src="https://kit.fontawesome.com/077b065f8a.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <div class='navbar'>
-        <span class="logo-container">
-          <span>
-          <a href="#home">
-            <img class="nav nav-img" src="img/minicube-logo.png">
-          </a>
-          </span>
-        </span>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <ul class="nav-links">
-          <li><a class="nav nav-link" href='#about'>About</a></li>
-          <li><a class="nav nav-link" href='#projects'>Projects</a></li>     
-        </ul>       
-      </div>
-    </header>
     <main>
       <div id="home">
-        <div class="landing-container">
-          <h1 class="text1">Hi,</h1>
-          <h1 class="text2">I'm MiniCube11</h1>
+        <img class="nav-img" src="img/minicube-logo.png">
+        <div class="landing-container">          
+          <h1>MiniCube11</h1>
+          <p class='desc'>programmer, designer</p>           
         </div>
-      </div>
-      <div id="projects">
-        <div class="projects-container">
-          <h1 class="text2 projects-heading">Projects</h1>
-          <div class="projects-section">
-            <div class="project">             
-              <a href="https://www.clock-time.cf/" target="_blank" rel="noreferrer">
-                <img class="project-img" src="img/clock.png">
-                <p class="project-title">Clock</p>
-                <!-- <p class="project-tech">HTML, CSS, JS</p> -->
-                <p class="project-info">A minimal clock with different color themes.</p>
-              </a>
-            </div>
-            <div class="project">
-              <a href="https://scratch.mit.edu/projects/401127257/" target="_blank" rel="noreferrer">
-                <img class="project-img" src="img/arrow.png">
-                <p class="project-title">Arrow</p>
-                <!-- <p class="project-tech">Scratch</p> -->
-                <p class="project-info">A simple, addictive game where you have to dodge arrows and collect diamonds.</p>
-              </a>
-            </div>
-            <div class="project">
-              <a href="https://scratch.mit.edu/projects/381008348/" target="_blank" rel="noreferrer">
-                <img class="project-img" src="img/drop.png">
-                <p class="project-title">Drop</p>
-                <!-- <p class="project-tech">Scratch</p> -->
-                <p class="project-info">A game where you solve puzzles by drawing lines.</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="about">
-        <h1 class="text2">About</h1>
-        <p>Hi, I'm MiniCube11. I'm a high school student who likes to code and design.</p>
-        <p></p>
-        <div class="links">
-          <a title="Dribbble" href="https://dribbble.com/MiniCube11" target="_blank" rel="noreferrer">
-            <i class="fab fa-dribbble"></i>
+        <div class="links pd-bottom">            
+          <a title="Github" href="https://github.com/MiniCube11/" target="_blank" rel="noreferrer">
+            <i class="fab fa-github"></i>
           </a>
           <a title="Scratch" href="https://scratch.mit.edu/users/MiniCube11/" target="_blank" rel="noreferrer">
             <span>😸</span>
           </a>
-          <a title="Github" href="https://github.com/MiniCube11/" target="_blank" rel="noreferrer">
-            <i class="fab fa-github"></i>
+          <a title="Dribbble" href="https://dribbble.com/MiniCube11" target="_blank" rel="noreferrer">
+            <i class="fab fa-dribbble"></i>
           </a>
           <a title="Email" href="mailto:contact.minicube11@gmail.com" target="_blank" rel="noreferrer">
-            <i class="fas fa-envelope-open-text"></i>          
+            <i class="far fa-envelope"></i>          
           </a>
+          
         </div>
-        
+        <a href="#projects"><i class="fas fa-chevron-down down"></i></a>
+      </div>
+      <div id="projects">
+        <div class="projects-container">
+          <div class="centered">
+            <h2>Projects</h2>            
+          </div>
+          <div class="projects-section">
+            <div class="parent">
+              <div class="image-container">
+                <img class="project-img" src="img/paint.png">
+                <div class="overlay">
+                  <div class="project-links">
+                    <a href="https://scratch.mit.edu/projects/500310859" target="_blank" rel="noreferrer"><i class="white fas fa-external-link-alt"></i></a>
+                  </div>
+                  <p>A simple paint app built in Scratch</p>
+                </div>
+              </div>
+              <div class="image-container">
+                <img class="project-img bordered" src="img/arrow.png">
+                <div class="overlay">
+                  <div class="project-links">
+                    <a href="https://scratch.mit.edu/projects/401127257/" target="_blank" rel="noreferrer"><i class="white fas fa-external-link-alt"></i></a>
+                  </div>
+                  <p>A game where you have to dodge arrows and collect diamonds</p>
+                </div>
+              </div>
+            </div>
+            <div class="parent">
+              <div class="image-container">
+                <img class="project-img" src="img/drop.png">
+                <div class="overlay">
+                  <div class="project-links">
+                    <a href="https://scratch.mit.edu/projects/381008348/" target="_blank" rel="noreferrer"><i class="white fas fa-external-link-alt"></i></a>
+                  </div>
+                  <p>A puzzle game where you can draw lines</p>
+                </div>
+              </div>
+              <div class="image-container">
+                <img class="project-img" src="img/clock.png">
+                <div class="overlay">
+                  <div class="project-links">
+                    <a href="https://www.clock-time.cf/" target="_blank" rel="noreferrer"><i class="white fas fa-external-link-alt"></i></a>
+                  </div>
+                  <p>A minimal clock with different color themes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+      <div class="links centered">            
+        <a title="Github" href="https://github.com/MiniCube11/" target="_blank" rel="noreferrer">
+          <i class="fab fa-github"></i>
+        </a>
+        <a title="Scratch" href="https://scratch.mit.edu/users/MiniCube11/" target="_blank" rel="noreferrer">
+          <span>😸</span>
+        </a>
+        <a title="Dribbble" href="https://dribbble.com/MiniCube11" target="_blank" rel="noreferrer">
+          <i class="fab fa-dribbble"></i>
+        </a>
+        <a title="Email" href="mailto:contact.minicube11@gmail.com" target="_blank" rel="noreferrer">
+          <i class="far fa-envelope"></i>          
+        </a>
+      </div>
+      <div class="credit centered">
+        <p>© MiniCube11 2021</p>
       </div>
     </main>
     <script src="script.js"></script>
