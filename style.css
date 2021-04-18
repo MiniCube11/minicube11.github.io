@@ -16,6 +16,7 @@ html {
   --image-shadow: 0 0.3em 0.8em rgba(0, 0, 0, 0.3);
   --scratch-hue: 160deg;
   --text-primary: #212121;
+  --project-width: 290px;
 }
 
 body {
@@ -87,25 +88,25 @@ h2 {
 }
 
 #projects {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 40px 0;
 }
 
 .projects-container {
-  height: 80vh;
-  width: 80vw;
-  /* background-color: #212121; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .projects-section {
   margin-top: 7vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: var(--project-width) var(--project-width);
+  grid-gap: 20px;
 }
 
 .parent {
@@ -114,9 +115,7 @@ h2 {
 }
 
 .image-container {
-  width: fit-content;
   position: relative;
-  /* background-color: #ffb0d6; */
 }
 
 .image-container:hover .overlay {
@@ -125,18 +124,16 @@ h2 {
 }
 
 .project-img {
-  width: 21vw;
-  margin: 0 0.5vw;
+  width: var(--project-width);
   border-radius: 2%;
 }
 
 .overlay {
   position: absolute;
   opacity: 0;
-  width: 21vw;
+  width: var(--project-width);
   height: 98%;
   border-radius: 2%;
-  margin: 0 0.5vw;
   background-color: #252525;
   top: 0;
   left: 0;
@@ -171,6 +168,9 @@ h2 {
 
 .links {
   margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .links i{
@@ -208,10 +208,28 @@ h2 {
 }
 
 @media screen and (max-width:43em) {
+  .links i:hover {
+    color: var(--dark-blue);
+    transition: color 0.5s ease;
+  }
   
+  .links span:hover {
+    filter: grayscale(50%) hue-rotate(var(--scratch-hue));
+    -webkit-filter: grayscale(50%) hue-rotate(var(--scratch-hue));
+    transition: filter 0.5s;
+    transition: -webkit-filter 0.5s;
+  }
+  
+  .projects-section {
+    margin-top: 7vh;
+    display: grid;
+    grid-template-columns: var(--project-width);
+    grid-gap: 20px;
+  }
 }
 
 @media screen and (min-width:43em) and (max-width:62em){
+  
   
 }
 
