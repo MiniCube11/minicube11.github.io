@@ -1,0 +1,144 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1000;
+  width: 50vw;
+  top: 0;
+  padding: 30px var(--mg-width);
+  padding-bottom: 10px;
+  font-size: var(--main-font-size);
+  background-color: white;
+}
+
+.nav-name {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.nav-links a {
+  display: inline-block;
+  position: relative;
+}
+
+.navbar .nav-links a:hover {
+  color: rgb(0, 0, 0);
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-links a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--dark-blue);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar .nav-links a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nav-mobile {
+  background-color: white;
+  position: fixed;
+  width: 80vw;
+  top: 0;
+  margin: 30px 0;
+  font-size: var(--main-font-size);
+  z-index: 1000;
+}
+
+.nav-mobile .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: var(--mg-width);
+  margin-bottom: 20px;
+}
+
+.navbar a,
+.nav-mobile a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navbar img,
+.nav-mobile img {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.nav-mobile .nav-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-mobile .nav-links a {
+  width: 100vw;
+  background-color: white;
+  padding: 6px var(--mg-width);
+}
+
+.nav-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 62em) {
+  .hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+  .hamburger .one,
+  .hamburger .two {
+    height: 4px;
+    width: 26px;
+    background-color: black;
+    border-radius: 2px;
+  }
+  .hamburger .one,
+  .hamburger .two {
+    transform-origin: center;
+    transition-duration: 0.3s;
+  }
+  .hamburger .two {
+    margin-top: 8px;
+  }
+  .open .hamburger .one {
+    transform: rotate(-45deg) translateY(8px);
+  }
+  .open .hamburger .two {
+    transform: rotate(45deg) translateY(-8px);
+  }
+  .navbar {
+    display: none;
+  }
+  .nav-mobile {
+    display: block;
+  }
+  .nav-links {
+    width: 100vw;
+    background-color: white;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(112, 112, 112);
+  }
+  .close .nav-links {
+    display: none;
+    opacity: 0;
+    margin: 20px 0;
+  }
+}

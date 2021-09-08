@@ -1,100 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>MiniCube11</title>
-    <link rel="icon" href="img/minicube-icon.png" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/077b065f8a.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <main>
-      <div id="home">
-        <img class="nav-img" src="img/minicube-logo.png">
-        <div class="landing-container">          
-          <h1>MiniCube11</h1>
-          <p class='desc'>programmer, designer</p>           
-        </div>
-        <div class="links pd-bottom">            
-          <a title="Github" href="https://github.com/MiniCube11/" target="_blank" rel="noreferrer">
-            <i class="fab fa-github"></i>
-          </a>
-          <a title="Scratch" href="https://scratch.mit.edu/users/MiniCube11/" target="_blank" rel="noreferrer">
-            <span>😸</span>
-          </a>
-          <a title="Dribbble" href="https://dribbble.com/MiniCube11" target="_blank" rel="noreferrer">
-            <i class="fab fa-dribbble"></i>
-          </a>
-          <a title="Email" href="mailto:contact.minicube11@gmail.com" target="_blank" rel="noreferrer">
-            <i class="far fa-envelope"></i>          
-          </a>
-          
-        </div>
-        <a href="#projects"><i class="fas fa-chevron-down down"></i></a>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Ching Lam Lau</title>
+  <link rel="icon" href="img/minicube-icon.png" />
+  <link href="main.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="style2.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="navbar">
+
+    <a class="nav-name" href="/">
+      <img src="img/minicube-logo.png">
+      Ching Lam Lau
+    </a>
+    <div class="nav-links">
+      <a href="/">About</a>
+      <a href="projects/">Projects</a>
+      <a href="contact/">Contact</a>
+    </div>
+  </div>
+  <div class="nav-mobile close">
+    <div class="top">
+      <a class="nav-name" href="/">
+        <img src="img/minicube-logo.png">
+        Ching Lam Lau
+      </a>
+      <div class="hamburger" onclick="toggleMobileLinks()">
+        <div class="one"></div>
+        <div class="two"></div>
       </div>
-      <div id="projects">
-        <div class="projects-container">
-          <h2>Projects</h2>
-          <div class="projects-section">
-            <div class="image-container">
-              <img class="project-img" src="img/paint.png">
-              <div class="overlay">
-                <div class="project-links">
-                  <a href="https://scratch.mit.edu/projects/500310859" target="_blank" rel="noreferrer"><i class="white fas fa-external-link-alt"></i></a>
-                </div>
-                <p>A simple paint app built in Scratch</p>
-              </div>
-            </div>
-            <div class="image-container">
-              <img class="project-img bordered" src="img/arrow.png">
-              <div class="overlay">
-                <div class="project-links">
-                  <a href="https://scratch.mit.edu/projects/401127257/" target="_blank" rel="noreferrer"><i class="white fas fa-external-link-alt"></i></a>
-                </div>
-                <p>A game where you have to dodge arrows and collect diamonds</p>
-              </div>
-            </div>
-            <div class="image-container">
-              <img class="project-img" src="img/drop.png">
-              <div class="overlay">
-                <div class="project-links">
-                  <a href="https://scratch.mit.edu/projects/381008348/" target="_blank" rel="noreferrer"><i class="white fas fa-external-link-alt"></i></a>
-                </div>
-                <p>A puzzle game where you can draw lines</p>
-              </div>
-            </div>
-            <div class="image-container">
-              <img class="project-img" src="img/clock.png">
-              <div class="overlay">
-                <div class="project-links">
-                  <a href="https://www.clock-time.cf/" target="_blank" rel="noreferrer"><i class="white fas fa-external-link-alt"></i></a>
-                </div>
-                <p>A minimal clock with different color themes</p>
-              </div>
-            </div>
-          </div>
-        </div>        
-      </div>
-      <div class="links">            
-        <a title="Github" href="https://github.com/MiniCube11/" target="_blank" rel="noreferrer">
-          <i class="fab fa-github"></i>
-        </a>
-        <a title="Scratch" href="https://scratch.mit.edu/users/MiniCube11/" target="_blank" rel="noreferrer">
-          <span>😸</span>
-        </a>
-        <a title="Dribbble" href="https://dribbble.com/MiniCube11" target="_blank" rel="noreferrer">
-          <i class="fab fa-dribbble"></i>
-        </a>
-        <a title="Email" href="mailto:contact.minicube11@gmail.com" target="_blank" rel="noreferrer">
-          <i class="far fa-envelope"></i>          
-        </a>
-      </div>
-      <div class="credit centered">
-        <p>© MiniCube11 2021</p>
-      </div>
-    </main>
-  </body>
+    </div>
+    <div class="nav-links">
+      <a href="/">About</a>
+      <a href="projects/">Projects</a>
+      <a href="contact/">Contact</a>
+    </div> 
+  </div>
+  <div class="main" id="about">
+    <p class="anim-in">Hi, my name is Ching Lam!</p>
+    <p class="anim-in">I'm currently a grade 10 student at Waterloo C.I. My main interests are computer science and
+      mathematics. I like
+      solving <a class="link" href="https://dmoj.ca/user/minicube11" target="_blank"
+        rel="noopener noreferrer">problems</a> and working on small
+      <a class="link" href="../projects/">projects</a>.
+    </p>
+    <p class="anim-in">In my free time, I also enjoy drawing, <a class="link" href="https://dribbble.com/MiniCube11"
+        target="_blank" rel="noopener noreferrer">designing</a>, playing soccer,
+      reading, and playing the violin.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
