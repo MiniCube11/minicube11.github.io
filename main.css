@@ -87,6 +87,7 @@
   justify-content: space-between;
   flex-direction: column;
   height: 100vh;
+  user-select: none;
 }
 
 #logo {
