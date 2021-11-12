@@ -7,5 +7,5 @@
 </p>
 <br>
 <div align="center">
-  <img alt="Demo" src="img/demo.jpg"/>
+  <img alt="Demo" src="img/demo.gif"/>
 </div>
