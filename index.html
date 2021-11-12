@@ -7,53 +7,104 @@
   <title>Ching Lam Lau</title>
   <link rel="icon" href="img/minicube-icon.png" />
   <link href="main.css" rel="stylesheet" type="text/css" />
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link href="style2.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
-  <div class="navbar">
-
-    <a class="nav-name" href="/">
-      <img src="img/minicube-logo.png">
-      Ching Lam Lau
+  <canvas id="c"></canvas>
+  <a href="#top">
+    <img id="scrolltop" class="scrolltotop" src="img/arrow-up.svg">
+  </a>
+  <div class="side-links">
+    <a class="slideup delay1" href="https://github.com/MiniCube11" target="_blank" rel="noopener noreferrer">
+      <img src="img/github.svg">
     </a>
-    <div class="nav-links">
-      <a href="/">About</a>
-      <a href="projects/">Projects</a>
-      <a href="contact/">Contact</a>
+    <a class="slideup delay2" href="mailto:contact.minicube11@gmail.com" >
+      <img src="img/mail.svg">
+    </a>
+    <div class="centered">
+      <div class="line"></div>
     </div>
   </div>
-  <div class="nav-mobile close">
-    <div class="top">
-      <a class="nav-name" href="/">
-        <img src="img/minicube-logo.png">
-        Ching Lam Lau
+  <div id="top">
+    <div>
+      <a href="">
+        <img id="logo" class="fadein delay1" src="img/minicube-logo.png">
       </a>
-      <div class="hamburger" onclick="toggleMobileLinks()">
-        <div class="one"></div>
-        <div class="two"></div>
+    </div>
+    <div id="name">
+      <p class="slideup delay3">Hi, my name is</p>
+      <h2 class="slideup delay4">Ching Lam Lau</h2>
+    </div>
+    <div class="nav-links fadein delay2">
+      <p><a href="#about">about</a> / <a href="#projects">projects</a> / <a href="#contact">contact</a></p>
+    </div>
+  </div>
+  <div id="about" class="section" data-aos="fade-up" data-aos-duration="1100">
+    <h2>About</h2>
+    <div class="desc">
+      <p>I’m Ching Lam and I am currently a grade 10 student at Waterloo C.I. I am passionate about programming and I enjoy challenging myself by learning new things and solving problems.</p>
+    </div>
+  </div>
+  <div id="projects" class="section">
+    <h2 data-aos="fade-up" data-aos-offset="300">Projects</h2>
+    <div class="project" data-aos="fade-up" data-aos-offset="300">
+      <img class="demo" id="img1" src="img/note.jpg">
+      <div class="info">
+        <h3>Notes</h3>
+        <div class="tech-container">
+          <span class="tech">Flask/Python</span>
+          <span class="tech">HTML+CSS</span>
+          <span class="tech">jQuery</span>
+          <span class="tech">Javascript</span>
+        </div>
+        <p>A note-taking web app with a minimalistic interface. Create, edit, and view your notes on any device.</p>
+        <div class="links">
+          <a href="https://github.com/MiniCube11/notes" target="_blank" rel="noopener noreferrer">
+            <img src="img/github.svg">
+          </a>
+          <a href="https://notesapp0011.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+            <img src="img/external-link.svg">
+          </a>
+        </div>
       </div>
     </div>
-    <div class="nav-links">
-      <a href="/">About</a>
-      <a href="projects/">Projects</a>
-      <a href="contact/">Contact</a>
-    </div> 
+    <div class="project" data-aos="fade-up" data-aos-offset="100">
+      <img class="demo" id="img2" src="img/pathfinding.jpg">
+      <div class="info">
+        <h3>Pathfinding Visualizer</h3>
+        <div class="tech-container">
+          <span class="tech">Pygame/Python</span>
+        </div>
+        <p>A tool for visualizing different pathfinding algorithms. Add walls to the graph and watch the algorithm find a path from the start to the target.</p>
+        <div class="links">
+          <a href="https://github.com/MiniCube11/pathfinding-visualizer" target="_blank" rel="noopener noreferrer">
+            <img src="img/github.svg">
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="main" id="about">
-    <p class="anim-in">Hi, my name is Ching Lam!</p>
-    <p class="anim-in">I'm currently a grade 10 student at Waterloo C.I. My main interests are computer science and
-      mathematics. I like
-      solving <a class="link" href="https://dmoj.ca/user/minicube11" target="_blank"
-        rel="noopener noreferrer">problems</a> and working on small
-      <a class="link" href="../projects/">projects</a>.
-    </p>
-    <p class="anim-in">In my free time, I also enjoy drawing, <a class="link" href="https://dribbble.com/MiniCube11"
-        target="_blank" rel="noopener noreferrer">designing</a>, playing soccer,
-      reading, and playing the violin.</p>
+  <div id="contact" class="section" data-aos="fade-up" data-aos-duration="900" data-aos-offset="300">
+    <h2>Contact</h2>
+    <div class="desc">
+      <p>Feel free to talk through<br> 
+        <a id="contact-me" href="mailto:contact.minicube11@gmail.com">contact.minicube11@gmail.com</a>
+      </p>
+      <p>
+        <a class="social" href="https://github.com/MiniCube11" target="_blank" rel="noopener noreferrer">Github</a> — 
+        <a class="social" href="https://dmoj.ca/user/minicube11" target="_blank" rel="noopener noreferrer">DMOJ</a> — 
+        <a class="social" href="https://scratch.mit.edu/users/MiniCube11/" target="_blank" rel="noopener noreferrer">Scratch</a>
+      </p>
+    </div>
   </div>
+  <div class="footer">
+    <p>© 2021 Ching Lam Lau / <a href="https://github.com/MiniCube11/minicube11.github.io" target="_blank" rel="noopener noreferrer">Source Code</a></p>
+  </div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
   <script src="script.js"></script>
+  <script src="landing.js"></script>
 </body>
 
 </html>
