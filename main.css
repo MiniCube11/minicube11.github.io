@@ -283,15 +283,15 @@
 }
 
 .delay2 {
-  animation-delay: 0.8s;
+  animation-delay: 0.7s;
 }
 
 .delay3 {
-  animation-delay: 1.5s;
+  animation-delay: 0.8s;
 }
 
 .delay4 {
-  animation-delay: 1.9s;
+  animation-delay: 1.2s;
 }
 
 @keyframes slideup {
