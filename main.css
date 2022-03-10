@@ -165,6 +165,11 @@
   height: calc(var(--img-width) * 648 / 1030);
 }
 
+#img3 {
+  width: var(--img-width);
+  height: calc(var(--img-width) * 888 / 1658);
+}
+
 #img2 {
   width: calc(var(--img-width) * 1.1);
   height: calc(var(--img-width) * 887 / 1545 * 1.1);
