@@ -204,7 +204,7 @@
   margin-bottom: 60px;
 }
 
-#contact-me {
+.contact-me {
   display: inline-block;
   position: relative;
   margin-top: 10px;
@@ -213,12 +213,12 @@
   font-weight: bold;
 }
 
-#contact-me:hover {
+.contact-me:hover {
   color: var(--blue);
   transition: color 0.2s ease-in-out;
 }
 
-#contact-me:after {
+.contact-me:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -231,9 +231,13 @@
   transition: transform 0.25s ease-out;
 }
 
-#contact-me:hover:after {
+.contact-me:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.smallest-screen-only {
+  display: none;
 }
 
 .social {
@@ -353,5 +357,14 @@
   }
   .side-links {
     display: none;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .normal-screen-only {
+    display: none;
+  }
+  .smallest-screen-only {
+    display: block;
   }
 }
